@@ -1,0 +1,565 @@
+2017-07-11 16:24:09.736 [main] ERROR mylog - ni hao.
+16:39:06.351 ERROR com.transfar.app.App 29 main - ni hao.
+16:39:24.028 ERROR com.transfar.app.App 29 main - ni hao.
+16:39:52.291 ERROR com.transfar.app.App 29 main - ni hao,linianfu.
+16:47:15.182 INFO  com.transfar.app.App 29 main - Hello World..
+09:26:45.210 INFO  com.transfar.app.App 26 main - run success.
+10:18:44.789 INFO  com.transfar.app.App 26 main - run success.
+15:05:25.772 TRACE org.elasticsearch.plugins.PluginsService 105 <init> - plugin loaded from classpath [- Plugin information:
+Name: org.elasticsearch.transport.Netty3Plugin
+Description: classpath plugin
+Version: NA
+Native Controller: false
+ * Classname: org.elasticsearch.transport.Netty3Plugin]
+15:05:25.780 TRACE org.elasticsearch.plugins.PluginsService 105 <init> - plugin loaded from classpath [- Plugin information:
+Name: org.elasticsearch.transport.Netty4Plugin
+Description: classpath plugin
+Version: NA
+Native Controller: false
+ * Classname: org.elasticsearch.transport.Netty4Plugin]
+15:05:25.782 TRACE org.elasticsearch.plugins.PluginsService 105 <init> - plugin loaded from classpath [- Plugin information:
+Name: org.elasticsearch.index.reindex.ReindexPlugin
+Description: classpath plugin
+Version: NA
+Native Controller: false
+ * Classname: org.elasticsearch.index.reindex.ReindexPlugin]
+15:05:25.783 TRACE org.elasticsearch.plugins.PluginsService 105 <init> - plugin loaded from classpath [- Plugin information:
+Name: org.elasticsearch.percolator.PercolatorPlugin
+Description: classpath plugin
+Version: NA
+Native Controller: false
+ * Classname: org.elasticsearch.percolator.PercolatorPlugin]
+15:05:25.784 TRACE org.elasticsearch.plugins.PluginsService 105 <init> - plugin loaded from classpath [- Plugin information:
+Name: org.elasticsearch.script.mustache.MustachePlugin
+Description: classpath plugin
+Version: NA
+Native Controller: false
+ * Classname: org.elasticsearch.script.mustache.MustachePlugin]
+15:05:25.795 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:05:25.799 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:05:25.799 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:05:25.799 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:05:25.799 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:05:25.800 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:05:25.848 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [force_merge], size [1], queue size [unbounded]
+15:05:25.849 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [fetch_shard_started], core [1], max [8], keep alive [5m]
+15:05:25.850 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [listener], size [2], queue size [unbounded]
+15:05:25.853 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [index], size [4], queue size [200]
+15:05:25.853 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [refresh], core [1], max [2], keep alive [5m]
+15:05:25.854 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [generic], core [4], max [128], keep alive [30s]
+15:05:25.854 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [warmer], core [1], max [2], keep alive [5m]
+15:05:25.854 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [search], size [7], queue size [1k]
+15:05:25.855 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [flush], core [1], max [2], keep alive [5m]
+15:05:25.855 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [fetch_shard_store], core [1], max [8], keep alive [5m]
+15:05:25.855 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [management], core [1], max [5], keep alive [5m]
+15:05:25.856 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [get], size [4], queue size [1k]
+15:05:25.856 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [bulk], size [4], queue size [200]
+15:05:25.857 DEBUG org.elasticsearch.threadpool.ThreadPool 203 <init> - created thread pool: name [snapshot], core [1], max [2], keep alive [5m]
+15:05:26.931 DEBUG org.elasticsearch.common.network.IfConfig 107 doLogging - configuration:
+
+lo
+        Software Loopback Interface 1
+        inet 127.0.0.1 netmask:255.0.0.0 broadcast:127.255.255.255 scope:host
+        inet6 ::1 prefixlen:128 scope:host
+        UP MULTICAST LOOPBACK mtu:-1 index:1
+
+eth0
+        VMware Virtual Ethernet Adapter for VMnet1
+        inet 192.168.71.1 netmask:255.255.255.0 broadcast:192.168.71.255 scope:site
+        inet6 fe80::6409:1e65:ddfc:5812 prefixlen:64 scope:link
+        hardware 00:50:56:C0:00:01
+        UP MULTICAST mtu:1500 index:2
+
+eth1
+        VMware Virtual Ethernet Adapter for VMnet8
+        inet 192.168.252.1 netmask:255.255.255.0 broadcast:192.168.252.255 scope:site
+        inet6 fe80::a8bf:baff:5fde:3723 prefixlen:64 scope:link
+        hardware 00:50:56:C0:00:08
+        UP MULTICAST mtu:1500 index:3
+
+net0
+        Dell VPN Adapter
+        MULTICAST mtu:-1 index:4
+
+net1
+        WAN Miniport (PPTP)
+        MULTICAST mtu:-1 index:5
+
+eth2
+        WAN Miniport (IPv6)
+        MULTICAST mtu:-1 index:6
+
+net2
+        WAN Miniport (SSTP)
+        MULTICAST mtu:-1 index:7
+
+ppp0
+        WAN Miniport (PPPOE)
+        MULTICAST mtu:-1 index:8
+
+net3
+        WAN Miniport (IKEv2)
+        MULTICAST mtu:-1 index:9
+
+net4
+        Microsoft Teredo Tunneling Adapter
+        inet6 2001:0:9d38:6ab8:2818:298d:8c13:b8bf prefixlen:0
+        inet6 fe80::2818:298d:8c13:b8bf prefixlen:32 scope:link
+        hardware 00:00:00:00:00:00:00:E0
+        UP POINTOPOINT mtu:1280 index:10
+
+eth3
+        WAN Miniport (Network Monitor)
+        MULTICAST mtu:-1 index:11
+
+net5
+        Microsoft ISATAP Adapter #3
+        inet6 fe80::5efe:c0a8:3801 prefixlen:128 scope:link
+        hardware 00:00:00:00:00:00:00:E0
+        POINTOPOINT mtu:1280 index:12
+
+eth4
+        VirtualBox Host-Only Ethernet Adapter
+        inet 192.168.56.1 netmask:255.255.255.0 broadcast:192.168.56.255 scope:site
+        inet6 fe80::2999:879f:663c:78eb prefixlen:64 scope:link
+        hardware 0A:00:27:00:00:0D
+        UP MULTICAST mtu:1500 index:13
+
+net6
+        Microsoft ISATAP Adapter
+        MULTICAST mtu:-1 index:14
+
+net7
+        Microsoft ISATAP Adapter #5
+        inet6 fe80::5efe:c0a8:fc01 prefixlen:128 scope:link
+        hardware 00:00:00:00:00:00:00:E0
+        POINTOPOINT mtu:1280 index:15
+
+net8
+        Microsoft ISATAP Adapter #4
+        inet6 fe80::5efe:c0a8:4701 prefixlen:128 scope:link
+        hardware 00:00:00:00:00:00:00:E0
+        POINTOPOINT mtu:1280 index:16
+
+wlan0
+        Microsoft Wi-Fi Direct Virtual Adapter
+        inet6 fe80::c959:1ec8:f3bf:7ee5 prefixlen:64 scope:link
+        hardware 28:16:AD:7E:EF:2E
+        MULTICAST mtu:1500 index:17
+
+net9
+        Microsoft ISATAP Adapter #2
+        inet6 fe80::5efe:a32:eec prefixlen:128 scope:link
+        hardware 00:00:00:00:00:00:00:E0
+        POINTOPOINT mtu:1280 index:18
+
+eth5
+        Intel(R) Ethernet Connection I219-LM
+        inet6 fe80::ccc3:d8d7:df4:9fdc prefixlen:64 scope:link
+        hardware D4:81:D7:B5:92:A5
+        MULTICAST mtu:1500 index:19
+
+net10
+        WAN Miniport (L2TP)
+        MULTICAST mtu:-1 index:20
+
+eth6
+        Microsoft Kernel Debug Network Adapter
+        MULTICAST mtu:-1 index:21
+
+wlan1
+        Intel(R) Dual Band Wireless-AC 8260
+        inet 10.50.14.236 netmask:255.255.192.0 broadcast:10.50.63.255 scope:site
+        inet6 fe80::1ff:6d31:b58:43aa prefixlen:64 scope:link
+        hardware 28:16:AD:7E:EF:2D
+        UP MULTICAST mtu:1500 index:22
+
+eth7
+        WAN Miniport (IP)
+        MULTICAST mtu:-1 index:23
+
+eth8
+        VirtualBox Host-Only Ethernet Adapter-WFP Native MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:24
+
+eth9
+        VirtualBox Host-Only Ethernet Adapter-VirtualBox NDIS Light-Weight Filter-0000
+        MULTICAST mtu:-1 index:25
+
+eth10
+        VirtualBox Host-Only Ethernet Adapter-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:26
+
+eth11
+        VirtualBox Host-Only Ethernet Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:27
+
+eth12
+        Intel(R) Ethernet Connection I219-LM-WFP Native MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:28
+
+eth13
+        Intel(R) Ethernet Connection I219-LM-VirtualBox NDIS Light-Weight Filter-0000
+        MULTICAST mtu:-1 index:29
+
+eth14
+        Intel(R) Ethernet Connection I219-LM-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:30
+
+eth15
+        Intel(R) Ethernet Connection I219-LM-WFP 802.3 MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:31
+
+wlan2
+        Intel(R) Dual Band Wireless-AC 8260-WFP Native MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:32
+
+wlan3
+        Intel(R) Dual Band Wireless-AC 8260-Virtual WiFi Filter Driver-0000
+        MULTICAST mtu:-1 index:33
+
+wlan4
+        Intel(R) Dual Band Wireless-AC 8260-Native WiFi Filter Driver-0000
+        MULTICAST mtu:-1 index:34
+
+wlan5
+        Intel(R) Dual Band Wireless-AC 8260-VirtualBox NDIS Light-Weight Filter-0000
+        MULTICAST mtu:-1 index:35
+
+wlan6
+        Intel(R) Dual Band Wireless-AC 8260-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:36
+
+wlan7
+        Intel(R) Dual Band Wireless-AC 8260-WFP 802.3 MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:37
+
+wlan8
+        Microsoft Wi-Fi Direct Virtual Adapter-WFP Native MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:38
+
+wlan9
+        Microsoft Wi-Fi Direct Virtual Adapter-Native WiFi Filter Driver-0000
+        MULTICAST mtu:-1 index:39
+
+wlan10
+        Microsoft Wi-Fi Direct Virtual Adapter-VirtualBox NDIS Light-Weight Filter-0000
+        MULTICAST mtu:-1 index:40
+
+wlan11
+        Microsoft Wi-Fi Direct Virtual Adapter-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:41
+
+wlan12
+        Microsoft Wi-Fi Direct Virtual Adapter-WFP 802.3 MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:42
+
+eth16
+        WAN Miniport (IP)-WFP Native MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:43
+
+eth17
+        WAN Miniport (IP)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:44
+
+eth18
+        WAN Miniport (IPv6)-WFP Native MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:45
+
+eth19
+        WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:46
+
+eth20
+        WAN Miniport (Network Monitor)-WFP Native MAC Layer LightWeight Filter-0000
+        MULTICAST mtu:-1 index:47
+
+eth21
+        WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+        MULTICAST mtu:-1 index:48
+
+15:05:27.765 TRACE org.elasticsearch.indices.breaker.HierarchyCircuitBreakerService 106 <init> - parent circuit breaker with settings [parent,type=PARENT,limit=1318269747/1.2gb,overhead=1.0]
+15:05:27.766 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 81 <init> - creating ChildCircuitBreaker with settings [request,type=MEMORY,limit=1129945497/1gb,overhead=1.0]
+15:05:27.767 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 81 <init> - creating ChildCircuitBreaker with settings [fielddata,type=MEMORY,limit=1129945497/1gb,overhead=1.03]
+15:05:27.767 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 81 <init> - creating ChildCircuitBreaker with settings [in_flight_requests,type=MEMORY,limit=1883242496/1.7gb,overhead=1.0]
+15:05:27.883 DEBUG org.elasticsearch.client.transport.TransportClientNodesService 136 <init> - node_sampler_interval[5s]
+15:05:27.919 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.eventLoopThreads: 8
+15:05:27.938 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.noUnsafe: true
+15:05:27.938 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug - sun.misc.Unsafe: unavailable (io.netty.noUnsafe)
+15:05:27.938 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+15:05:27.939 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug - Platform: Windows
+15:05:27.939 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - Java version: 8
+15:05:27.940 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+15:05:27.940 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+15:05:27.941 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.noPreferDirect: true
+15:05:27.942 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.maxDirectMemory: -1 bytes
+15:05:27.942 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+15:05:27.961 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.noKeySetOptimization: true
+15:05:27.962 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.selectorAutoRebuildThreshold: 512
+15:05:27.964 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug - org.jctools-core.MpscChunkedArrayQueue: unavailable
+15:05:28.308 DEBUG org.elasticsearch.client.transport.TransportClientNodesService 195 addTransportAddresses - adding address [{#transport#-1}{6g78DpmJTcumcKLJJN_8xQ}{localhost}{127.0.0.1:9300}]
+15:05:28.321 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.processId: 12872 (auto-detected)
+15:05:28.323 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Djava.net.preferIPv4Stack: false
+15:05:28.324 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Djava.net.preferIPv6Addresses: false
+15:05:28.443 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 89 debug - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+15:05:28.444 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+15:05:28.603 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.machineId: 00:00:00:00:00:00:00:e0 (auto-detected)
+15:05:28.619 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug - -Dio.netty.leakDetection.level: simple
+15:05:28.620 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug - -Dio.netty.leakDetection.maxRecords: 4
+15:05:28.643 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.numHeapArenas: 8
+15:05:28.643 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.numDirectArenas: 8
+15:05:28.644 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.pageSize: 8192
+15:05:28.644 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.maxOrder: 11
+15:05:28.644 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.chunkSize: 16777216
+15:05:28.645 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.tinyCacheSize: 512
+15:05:28.645 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.smallCacheSize: 256
+15:05:28.645 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.normalCacheSize: 64
+15:05:28.646 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+15:05:28.646 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.cacheTrimInterval: 8192
+15:05:28.647 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.useCacheForAllThreads: true
+15:05:28.655 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.allocator.type: pooled
+15:05:28.655 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.threadLocalDirectBufferSize: 65536
+15:05:28.655 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+15:05:28.676 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 192 addWithoutBreaking - [request] Adjusted breaker by [16440] bytes, now [16440]
+15:05:28.701 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug - -Dio.netty.buffer.bytebuf.checkAccessible: true
+15:05:28.702 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 79 debug - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@69ce2f62
+15:05:28.710 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug - -Dio.netty.recycler.maxCapacityPerThread: disabled
+15:05:28.710 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug - -Dio.netty.recycler.maxSharedCapacityFactor: disabled
+15:05:28.710 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug - -Dio.netty.recycler.linkCapacity: disabled
+15:05:28.710 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 74 debug - -Dio.netty.recycler.ratio: disabled
+15:05:28.730 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 192 addWithoutBreaking - [request] Adjusted breaker by [-16440] bytes, now [0]
+15:05:28.731 TRACE org.elasticsearch.transport.TransportService$Adapter 903 traceRequestSent - [1][internal:tcp/handshake] sent to [{#transport#-1}{6g78DpmJTcumcKLJJN_8xQ}{localhost}{127.0.0.1:9300}] (timeout: [null])
+15:05:28.747 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 192 addWithoutBreaking - [request] Adjusted breaker by [16440] bytes, now [16440]
+15:05:28.747 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 192 addWithoutBreaking - [request] Adjusted breaker by [-16440] bytes, now [0]
+15:05:28.760 TRACE org.elasticsearch.client.transport.TransportClientNodesService$NodeSampler 373 validateNewNodes - connecting to node [{node-1}{yZnBH_eXTjqIh45c50eg8w}{5zB1z-wPThSASMxtnwphuA}{127.0.0.1}{127.0.0.1:9300}]
+15:05:28.779 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 192 addWithoutBreaking - [request] Adjusted breaker by [16440] bytes, now [16440]
+15:05:28.787 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 192 addWithoutBreaking - [request] Adjusted breaker by [-16440] bytes, now [0]
+15:05:28.789 TRACE org.elasticsearch.transport.TransportService$Adapter 903 traceRequestSent - [3][internal:tcp/handshake] sent to [{node-1}{yZnBH_eXTjqIh45c50eg8w}{5zB1z-wPThSASMxtnwphuA}{127.0.0.1}{127.0.0.1:9300}] (timeout: [null])
+15:05:28.794 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 192 addWithoutBreaking - [request] Adjusted breaker by [16440] bytes, now [16440]
+15:05:28.795 TRACE org.elasticsearch.common.breaker.ChildMemoryCircuitBreaker 192 addWithoutBreaking - [request] Adjusted breaker by [-16440] bytes, now [0]
+15:05:28.796 TRACE org.elasticsearch.transport.TransportService$Adapter 903 traceRequestSent - [4][internal:transport/handshake] sent to [{node-1}{yZnBH_eXTjqIh45c50eg8w}{5zB1z-wPThSASMxtnwphuA}{127.0.0.1}{127.0.0.1:9300}] (timeout: [30s])
+15:05:28.798 TRACE org.elasticsearch.transport.TransportService$Adapter 895 traceReceivedResponse - [4][internal:transport/handshake] received response from [{node-1}{yZnBH_eXTjqIh45c50eg8w}{5zB1z-wPThSASMxtnwphuA}{127.0.0.1}{127.0.0.1:9300}]
+15:05:28.799 DEBUG org.elasticsearch.transport.TcpTransport 478 connectToNode - connected to node [{node-1}{yZnBH_eXTjqIh45c50eg8w}{5zB1z-wPThSASMxtnwphuA}{127.0.0.1}{127.0.0.1:9300}]
+15:05:28.802 DEBUG org.elasticsearch.transport.TcpTransport 605 closeAndNotify - disconnecting from [{node-1}{yZnBH_eXTjqIh45c50eg8w}{5zB1z-wPThSASMxtnwphuA}{127.0.0.1}{127.0.0.1:9300}], due to explicit disconnect call
+15:05:28.806 TRACE org.elasticsearch.transport.TcpTransport 608 closeAndNotify - disconnected from [{node-1}{yZnBH_eXTjqIh45c50eg8w}{5zB1z-wPThSASMxtnwphuA}{127.0.0.1}{127.0.0.1:9300}], due to explicit disconnect call
+15:05:29.717 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug - Freed 2 thread-local buffer(s) from thread: threadDeathWatcher-2-1
+15:05:29.721 DEBUG org.elasticsearch.transport.netty4.Netty4InternalESLogger 84 debug - Freed 2 thread-local buffer(s) from thread: threadDeathWatcher-2-1
+15:05:30.722 INFO  com.transfar.app.App 40 main - run success.
+15:07:04.980 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:07:04.983 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:07:04.984 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:07:04.984 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:07:04.984 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:07:04.984 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:07:08.819 INFO  com.transfar.app.App 40 main - run success.
+15:22:03.135 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:22:03.138 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:22:03.138 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:22:03.139 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:22:03.139 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:22:03.139 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:22:06.862 INFO  com.transfar.app.App 49 main - run success.
+15:22:31.915 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:22:31.918 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:22:31.918 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:22:31.919 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:22:31.919 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:22:31.919 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:22:35.668 INFO  com.transfar.app.App 49 main - run success.
+15:22:59.013 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:22:59.017 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:22:59.017 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:22:59.017 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:22:59.017 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:22:59.017 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:23:02.760 INFO  com.transfar.app.App 49 main - run success.
+16:04:22.114 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:04:22.117 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:04:22.118 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:04:22.118 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:04:22.118 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:04:22.118 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:04:24.055 INFO  com.transfar.app.App 35 main - clientorg.elasticsearch.transport.client.PreBuiltTransportClient@5328a9c1
+16:04:24.056 INFO  com.transfar.app.App 36 main - {"user":"{\"linianfu\":\"Samsung\"}"}
+16:04:25.900 INFO  com.transfar.app.App 40 main - run success.
+11:28:14.795 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+11:28:14.801 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+11:28:14.801 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+11:28:14.801 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+11:28:14.801 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+11:28:14.802 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+11:28:17.673 INFO  com.transfar.app.App 39 main - {"user":"{\"linianfu\":\"Samsung\"}"}
+11:28:18.692 INFO  com.transfar.app.App 43 main - run success.
+15:03:36.238 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:03:36.238 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:03:36.238 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:03:36.238 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:03:36.238 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:03:36.238 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:03:38.253 INFO  com.transfar.es.ESClient 35 open - clientorg.elasticsearch.transport.client.PreBuiltTransportClient@3e7545e8
+15:07:30.668 INFO  com.transfar.hr.etl.HrDataSourceETL 129 getEmployeeDataFromExcel - employee size:8312
+15:07:31.116 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:07:31.116 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:07:31.116 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:07:31.116 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:07:31.116 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:07:31.116 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:09:05.461 INFO  com.transfar.hr.etl.HrDataSourceETL 129 getEmployeeDataFromExcel - employee size:8312
+15:09:05.951 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:09:05.956 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:09:05.956 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:09:05.956 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:09:05.957 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:09:05.957 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:13:00.330 INFO  com.transfar.hr.etl.HrDataSourceETL 129 getEmployeeDataFromExcel - employee size:8312
+15:13:00.813 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:13:00.815 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:13:00.815 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:13:00.816 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:13:00.816 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:13:00.816 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:33:13.065 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:33:13.069 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:33:13.070 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:33:13.070 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:33:13.070 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:33:13.070 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:52:56.345 INFO  com.transfar.hr.etl.HrDataSourceETL 130 getEmployeeDataFromExcel - employee size:8312
+15:52:56.828 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:52:56.830 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:52:56.830 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:52:56.830 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:52:56.830 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:52:56.831 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+15:55:18.879 INFO  com.transfar.hr.etl.HrDataSourceETL 130 getEmployeeDataFromExcel - employee size:8312
+15:55:19.430 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+15:55:19.432 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+15:55:19.432 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+15:55:19.432 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+15:55:19.433 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+15:55:19.433 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:33:45.049 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:33:45.054 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:33:45.054 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:33:45.054 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:33:45.055 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:33:45.055 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:34:32.705 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:34:32.709 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:34:32.709 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:34:32.709 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:34:32.710 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:34:32.710 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:41:10.429 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:41:10.433 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:41:10.433 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:41:10.434 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:41:10.434 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:41:10.434 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:41:12.234 INFO  com.transfar.hr.etl.HrDataSourceETL 44 main - {"took":3,"timed_out":false,"_shards":{"total":5,"successful":5,"failed":0},"hits":{"total":1,"max_score":8.6201105,"hits":[{"_index":"employees","_type":"employee","_id":"AV1AGFGgCTmIdEwnMQYe","_score":8.6201105,"_source":{"工号":"005561","姓名":"蔡红","公司":"杭州传化日用品有限公司","部门":"日用品技术质量部","职位":"日用品技术质量部-产品研发","职层":"员工","职级":"未定职级","岗位类别":"技术类","核心骨干":"否","出生日期":"197004","学历":"A - 未说明","性别":"女","婚姻状况":"已婚","入司时间":"190002","入司角色":"非应届生","入职来源":"未定义","户籍所在地":"未定义","当前状态":"在职"}}]}}
+16:49:08.281 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:49:08.284 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:49:08.285 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:49:08.285 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:49:08.285 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:49:08.285 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:49:10.152 INFO  com.transfar.hr.etl.HrDataSourceETL 44 main - {"_shards":{"total":5,"failed":0,"successful":5},"hits":{"hits":[{"_index":"employees","_type":"employee","_source":{"公司":"杭州传化日用品有限公司","岗位类别":"技术类","职级":"未定职级","学历":"A - 未说明","职位":"日用品技术质量部-产品研发","核心骨干":"否","性别":"女","姓名":"蔡红","户籍所在地":"未定义","部门":"日用品技术质量部","婚姻状况":"已婚","出生日期":"197004","工号":"005561","职层":"员工","入司时间":"190002","入职来源":"未定义","当前状态":"在职","入司角色":"非应届生"},"_id":"AV1AGFGgCTmIdEwnMQYe","_score":8.6201105}],"total":1,"max_score":8.6201105},"took":3,"timed_out":false}
+16:49:44.906 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:49:44.910 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:49:44.910 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:49:44.910 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:49:44.910 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:49:44.911 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:49:46.996 INFO  com.transfar.hr.etl.HrDataSourceETL 44 main - {"_shards":{"total":5,"failed":0,"successful":5},"hits":{"hits":[{"_index":"employees","_type":"employee","_source":{"公司":"杭州传化日用品有限公司","岗位类别":"技术类","职级":"未定职级","学历":"A - 未说明","职位":"日用品技术质量部-产品研发","核心骨干":"否","性别":"女","姓名":"蔡红","户籍所在地":"未定义","部门":"日用品技术质量部","婚姻状况":"已婚","出生日期":"197004","工号":"005561","职层":"员工","入司时间":"190002","入职来源":"未定义","当前状态":"在职","入司角色":"非应届生"},"_id":"AV1AGFGgCTmIdEwnMQYe","_score":8.6201105}],"total":1,"max_score":8.6201105},"took":3,"timed_out":false}
+16:51:19.039 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:51:19.042 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:51:19.042 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:51:19.043 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:51:19.044 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:51:19.044 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:51:55.294 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:51:55.298 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:51:55.298 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:51:55.298 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:51:55.298 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:51:55.298 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:52:25.311 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:52:25.314 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:52:25.315 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:52:25.315 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:52:25.315 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:52:25.315 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:52:27.112 INFO  com.transfar.hr.etl.HrDataSourceETL 44 main - 2
+17:11:22.574 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+17:11:22.583 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+17:11:22.584 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+17:11:22.584 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+17:11:22.584 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+17:11:22.584 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+17:11:24.465 INFO  com.transfar.hr.etl.HrDataSourceETL 44 main - 3
+17:11:48.903 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+17:11:48.907 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+17:11:48.907 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+17:11:48.907 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+17:11:48.908 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+17:11:48.908 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:57:25.393 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:57:25.398 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:57:25.398 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:57:25.398 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:57:25.398 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:57:25.399 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:57:27.240 INFO  com.transfar.app.App 31 main - {"user":"{\"linianfu\":\"Samsung\"}"}
+16:57:29.193 INFO  com.transfar.app.App 35 main - run success.
+16:58:05.386 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:58:05.390 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:58:05.390 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:58:05.390 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:58:05.390 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:58:05.390 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+16:58:07.175 INFO  com.transfar.app.App 31 main - {"user":"{\"linianfu\":\"Samsung\"}"}
+16:58:09.113 INFO  com.transfar.app.App 35 main - run success.
+16:59:15.058 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+16:59:15.073 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+16:59:15.073 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+16:59:15.073 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+16:59:15.073 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+16:59:15.073 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+17:10:59.575 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+17:10:59.580 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+17:10:59.581 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+17:10:59.581 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+17:10:59.581 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+17:10:59.581 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+17:11:02.523 INFO  com.transfar.app.App 31 main - {"user":"{\"linianfu\":\"Samsung\"}"}
+17:11:03.541 INFO  com.transfar.app.App 35 main - run success.
+17:14:56.852 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+17:14:56.863 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+17:14:56.863 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+17:14:56.864 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+17:14:56.864 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+17:14:56.864 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+17:16:36.915 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+17:16:36.921 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+17:16:36.921 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+17:16:36.921 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+17:16:36.922 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+17:16:36.922 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+17:28:18.945 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+17:28:18.949 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+17:28:18.949 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+17:28:18.949 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+17:28:18.949 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+17:28:18.949 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+17:33:23.245 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+17:33:23.249 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+17:33:23.249 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+17:33:23.249 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+17:33:23.250 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+17:33:23.250 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+08:45:40.353 INFO  org.elasticsearch.plugins.PluginsService 174 logPluginInfo - no modules loaded
+08:45:40.357 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+08:45:40.358 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+08:45:40.358 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+08:45:40.358 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+08:45:40.358 INFO  org.elasticsearch.plugins.PluginsService 177 logPluginInfo - loaded plugin [org.elasticsearch.transport.Netty4Plugin]

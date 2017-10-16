@@ -1,0 +1,334 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.transfar</groupId>
+  <artifactId>app</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+  <name>app</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+
+      <!--本地jar begin-->
+      <dependency>
+          <groupId>oracle.jdbc.driver</groupId>
+          <artifactId>ojdbc</artifactId>
+          <version>8</version>
+      </dependency>
+
+
+
+
+      <!--本地jar  end-->
+
+
+      <!-- 分词 begin-->
+      <dependency>
+          <groupId>org.ansj</groupId>
+          <artifactId>ansj_seg</artifactId>
+          <version>5.1.1</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers-smartcn -->
+      <dependency>
+          <groupId>org.apache.lucene</groupId>
+          <artifactId>lucene-analyzers-smartcn</artifactId>
+          <version>6.6.0</version>
+      </dependency>
+
+
+      <!-- 日志 -->
+      <dependency>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-core</artifactId>
+      </dependency>
+
+      <dependency>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-api</artifactId>
+      </dependency>
+
+      <!--单元测试-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+      <!-- 数据库-->
+      <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+      <dependency>
+          <groupId>org.mybatis</groupId>
+          <artifactId>mybatis</artifactId>
+          <version>3.4.4</version>
+      </dependency>
+
+
+      <!--excel doc等-->
+      <dependency>
+          <groupId>org.apache.poi</groupId>
+          <artifactId>poi</artifactId>
+          <version>3.16</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.poi</groupId>
+          <artifactId>poi-ooxml</artifactId>
+          <version>3.16</version>
+      </dependency>
+
+      <!--es 与 lucene -->
+    <dependency>
+    	<groupId>org.elasticsearch.client</groupId>
+    	<artifactId>transport</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-core</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers-common -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-analyzers-common</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-backward-codecs -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-backward-codecs</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-grouping -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-grouping</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-highlighter -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-highlighter</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-misc -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-misc</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-queryparser -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-queryparser</artifactId>
+    </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-spatial -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-spatial</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-spatial-extras -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-spatial-extras</artifactId>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-suggest -->
+    <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-suggest</artifactId>
+    </dependency>
+
+
+
+
+  </dependencies>
+  
+  <build>
+		<plugins>
+            <!--指定jre版本-->
+            <plugin>    
+                <groupId>org.apache.maven.plugins</groupId>    
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <source>1.8</source>    
+                    <target>1.8</target>    
+                </configuration>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>2.4.1</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals><goal>shade</goal></goals>
+                        <configuration>
+                            <transformers>
+                                <!--将依赖包打包-->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                
+                                <!--将App类生成可执行jar -->
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>org.elasticsearch.demo.Generate</mainClass>
+                                    <mainClass>com.transfar.app.App</mainClass>
+                                </transformer>
+                                
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+                <executions>
+                <!-- 本地依赖jar包的安装 -->
+                <!--以下配置等价于：
+                mvn install:install-file -Dfile=lib/instantclient_12_2/ojdbc8.jar -DgroupId=oracle.jdbc.driver -DartifactId=ojdbc -Dversion=8 -Dpackaging=jar -DgeneratePom=true
+                -->
+                    <execution>
+                        <id>install-xstreams</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <file>${basedir}/lib/instantclient_12_2/xstreams.jar</file>
+                            <repositoryLayout>default</repositoryLayout>
+                            <groupId>oracle.jdbc.driver</groupId>
+                            <artifactId>xstreams</artifactId>
+                            <version>1.8.0_91</version>
+                            <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
+                        </configuration>
+                        <goals>
+                            <!--安装你指定的文件到本地仓库-->
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+                    
+                    <execution>
+                        <id>install-ojdbc8</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <file>${basedir}/lib/instantclient_12_2/ojdbc8.jar</file>
+                            <repositoryLayout>default</repositoryLayout>
+                            <groupId>oracle.jdbc.driver</groupId>
+                            <artifactId>ojdbc</artifactId>
+                            <version>8</version>
+                            <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
+                        </configuration>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+
+
+                    <execution>
+                        <id>install-elasticsearch-analysis-ik</id>
+                        <phase>clean</phase>
+                        <configuration>
+                            <file>${basedir}/lib/elasticsearch-analysis-ik/target/elasticsearch-analysis-ik-5.5.0.jar</file>
+                            <repositoryLayout>default</repositoryLayout>
+                            <groupId>org.elasticsearch.analysis</groupId>
+                            <artifactId>ik</artifactId>
+                            <version>5.5.0</version>
+                            <packaging>jar</packaging>
+                            <generatePom>true</generatePom>
+                        </configuration>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+
+
+                </executions>
+            </plugin>
+
+		</plugins>
+		<defaultGoal>compile</defaultGoal>
+	</build>
+  
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>junit</groupId>
+  			<artifactId>junit</artifactId>
+  			<version>3.8.1</version>
+  		</dependency>
+        
+        
+  		<dependency>
+  			<groupId>org.elasticsearch.client</groupId>
+  			<artifactId>transport</artifactId>
+  			<version>5.4.3</version>
+  		</dependency>
+ 
+
+  		<dependency>
+  			<groupId>org.apache.logging.log4j</groupId>
+  			<artifactId>log4j-core</artifactId>
+  			<version>2.8.2</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.logging.log4j</groupId>
+  			<artifactId>log4j-api</artifactId>
+  			<version>2.8.2</version>
+  		</dependency>
+        
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-core</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-analyzers-common</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-backward-codecs</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-grouping</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-highlighter</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-misc</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-queryparser</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-spatial</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-spatial-extras</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.lucene</groupId>
+  			<artifactId>lucene-suggest</artifactId>
+  			<version>6.5.1</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+</project>
